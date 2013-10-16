@@ -789,6 +789,7 @@ intelCreateContext(gl_api api,
                                   major_version, minor_version, error,
                                   sharedContextPrivate);
    } else {
+      success = true;
       switch (api) {
       case API_OPENGL:
          if (major_version > 1 || minor_version > 3) {
